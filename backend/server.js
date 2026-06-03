@@ -17,7 +17,10 @@ const app = express();
 
 //Middleware
 app.use(cors({
-    origin: ['http://localhost:5173']
+    origin: [
+        'http://localhost:5173',
+        'https://ai-recipe-generator-eight-zeta.vercel.app/login'
+    ]
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
