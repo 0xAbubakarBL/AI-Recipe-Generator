@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import { ChefHat, UtensilsCrossed, Calendar, ShoppingCart, TrendingUp, Clock } from 'lucide-react';
 import api from '../services/api';
 
+// Dashboard Function
 const Dashboard = () => {
     const [stats, setStats] = useState({
         totalRecipes: 0,
